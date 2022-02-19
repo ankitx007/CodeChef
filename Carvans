@@ -1,0 +1,8 @@
+for i in range(int(input())):
+    n = int(input())
+    a = [int(x) for x in input().split()]
+    s = 1
+    for d in range(n-1):
+        if a[d+1] < min(a[:d+1]):
+            s+=1
+    print(s)
